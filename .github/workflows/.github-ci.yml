@@ -5,18 +5,18 @@ stages:
   - test
   - deploy
   
-    build-job:
-      stage: build
-      script:
-        - python3 -V
+build-job:
+  stage: build
+  script:
+    - python3 -V
       
-    test-count:
-      stage: test
-      script:
-        - python3 sum.py
+test-count:
+  stage: test
+  script:
+    - python3 sum.py
   
-    deploy-job:
-      stage: deploy
-      script:
-        - echo "Finished"
+deploy-job:
+  stage: deploy
+  script:
+   - echo "Finished"
    
